@@ -5,7 +5,7 @@ title: Home page
 author: Phil Garner
 # email: Phil.Garner@idiap.ch
 description: >
-  Pages containing information about my work, publications and software.
+  These pages contain information about my work, publications and software.
 
 # baseurl: ""
 # url: "http://idiap.ch"
@@ -16,18 +16,21 @@ github_username:  pgarner
 markdown: kramdown
 theme: minima
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/
+# Minima date format; refer to http://shopify.github.io/liquid/filters/date/
 minima:
   date_format: "%b %-d, %Y"
 
-# If you want to link only specific pages in your header, uncomment this and
-# add the path to the pages in order as they should show up
+# Specific pages that should appear in the header; order is respected.
 header_pages:
  - talks.md
+ - appendices.md
  - english.md
  - positions.md
  - blog.md
+
+# Collections of things.
+collections:
+ - appendices
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
