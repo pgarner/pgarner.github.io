@@ -34,19 +34,16 @@ here. Otherwise try the
 
 # Software
 
-[ISS](https://github.com/idiap/iss) is a framework for building and evaluating
-ASR models.
-
-[SSP](https://github.com/idiap/ssp) is a signal processing library in python.
+* [ISS](https://github.com/idiap/iss) is a framework for building and
+evaluating ASR models.
+* [SSP](https://github.com/idiap/ssp) is a signal processing library in python.
 It contains, amongst other things, a feature extractor and
 [continuous pitch estimator](http://publications.idiap.ch/index.php/publications/show/2451).
-Some functionality of SSP is duplicated in a C++ version called
-[libssp](https://github.com/idiap/libssp).
-
-Although it is not currently under active development, I maintain the
-[Juicer](http://juicer.amiproject.org/juicer) collection of ASR decoders.
-However, I wrote and actively maintain
-[Tracter](http://juicer.amiproject.org/tracter), a data-fow framework that
+* [libssp](https://github.com/idiap/libssp) duplicates some functionality of
+SSP in a C++ library.
+* [Juicer](http://juicer.amiproject.org/juicer) is a collection of ASR decoders.  It is not currently under active development; most of the functionality is available in [Kaldi](http://kaldi-asr.org).  However,
+* I wrote and actively maintain
+[Tracter](http://juicer.amiproject.org/tracter), a data-flow framework that
 forms the feature acquisition mechanism of Juicer.  Tracter wraps several other
 packages, including libssp.
 
