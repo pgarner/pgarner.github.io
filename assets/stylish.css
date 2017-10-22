@@ -1,0 +1,15 @@
+/*
+ * Stylish
+ * Like style, but different.
+ */
+body {
+        font-family: Bitstream Charter, Helvetica, sans-serif;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-top: 3em;
+        margin-bottom: 3em;
+}
+img.mugshot {
+        margin-right: 1ex;
+}
+

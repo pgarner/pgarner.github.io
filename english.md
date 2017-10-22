@@ -1,0 +1,47 @@
+---
+title: English
+layout: page
+---
+
+# Background
+
+I get asked English grammar questions sometimes.  They are usually difficult
+for the same reason that Feynman's differentiating under the integral worked:
+the person asking has already used all the tools to which they have access, and
+failed.  I don't have Feynman's method though; they're just tricky questions.
+
+I also get asked to proof read things a lot.
+
+# The second of two verbs is not necessarily an infinitive
+
+We tend to learn that the second of two verbs is in the infinitive; it's not
+entirely true.  The second of two verbs is actually likely to be a noun phrase
+forming the object of a transitive verb.  There are (at least) three general
+ways to do this:
+
+1. I like to shop. (Infinitive)
+1. I like shopping. (Gerund)
+1. I like that I shop. (Explicit nominalisation using another phrase)
+
+These are all grammatically correct, albeit with slightly different nuances.
+However, consider this example:
+
+1. I recommend to shop.
+1. I recommend shopping.
+1. I recommend that you shop.
+
+In this case the first is wrong, but it's not obvious why.  The second and
+third are correct.  It’s the third that explains why the first is wrong: the
+subject of the second verb is different to that of the first (you instead of
+I); the subjects were the same in the "like" case.  The infinitive cannot
+express that, even though it's clear from the use of "recommend".  The gerund
+one is OK because gerunds don't have subjects.
+
+This tends to happen with verbs like "recommend" and "allow" in a passive
+sense.  In these cases the right answer is often to use the verb in an explicit
+nominal form:
+
+1. I recommend to apply...  (wrong since the subject of apply is missing)
+1. I recommend applying... (OK but a bit ambiguous)
+1. I recommend that you apply... (OK, but it's not passive)
+1. I recommend application of... (OK and explicitly passive)
