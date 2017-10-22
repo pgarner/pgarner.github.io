@@ -26,11 +26,13 @@ header_pages:
  - appendices.md
  - english.md
  - positions.md
+ - ssp-course.md
  - blog.md
 
 # Collections of things.
 collections:
  - appendices
+ - ssp-course
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
