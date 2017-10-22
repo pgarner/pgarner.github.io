@@ -42,3 +42,6 @@ taught by my colleagues.
   * The Wiener filter
   * The Ephraim Malah suppression filter
   * Voice activity detection
+
+Caveat: Some of the slides above contain images "from the web" that omit an
+attribution or copyright.  It's my bad; I'll fix them as I find them.
