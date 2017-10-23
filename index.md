@@ -14,17 +14,18 @@ focus on physiologically plausible systems. Here is a short [bio](ieee-bio).
 
 # Paper trail
 
-My reviewed publications. These are also indexed by
+* My [reviewed publications](pubs/phil-pubs). These are also indexed by
 [Google Scholar](http://scholar.google.ch/citations?user=KyNTbPkAAAAJ) and
 [ResearchGate](http://www.researchgate.net/profile/Philip_Garner).  Of these,
 Google Scholar is probably the most accurate.
 
-A (possibly incomplete) list of my patents. They are mainly US, but in practice
-most of these began life as either GB or Japan patents; the US ones are just
-easier to reference.
+* A (possibly incomplete) list of [my patents](pubs/phil-pats). They are mainly
+US, but in practice most of these began life as either GB or Japan patents; the
+US ones are just easier to reference.
 
-Other technical reports that are not commercial in confidence or published
-elsewhere. The list includes some MPEG submissions that made it into MPEG-7.
+* Other [technical reports](pubs/phil-tech) that are not commercial in
+confidence or published elsewhere. The list includes some MPEG submissions that
+made it into MPEG-7.
 
 # Contact
 
@@ -51,8 +52,9 @@ More recent work is on my [GitHub](http://github.com/pgarner) page.
 
 # Teaching
 
-I hold a [lecturer position](http://people.epfl.ch/philip.garner) at [EPFL](http://www.epfl.ch/), and (a while ago now) taught a course on
-Speech Signal Processing.
+I hold a [lecturer position](http://people.epfl.ch/philip.garner) at
+[EPFL](http://www.epfl.ch/), and (a while ago now) taught a
+[course on Speech Signal Processing](ssp-course).
 
 # Also...
 
