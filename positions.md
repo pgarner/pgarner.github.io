@@ -17,6 +17,7 @@ funding.
 There are several postdoc positions open on quite large international projects:
 
 * [Multilingual speech processing and cross-lingual indexing](http://www.idiap.ch/education-and-jobs/job-10223)
+* [Speech and Speaker recognition for HMI devices](http://www.idiap.ch/education-and-jobs/job-10232)
 
 Idiap can be a good place to do a post-doc.  If you want an academic career, it
 is a springboard to a position elsewhere.  If you want to run a startup, it is
