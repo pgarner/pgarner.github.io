@@ -1,13 +1,14 @@
 # Run 'bundle exec jekyll serve' again if you change this file.
 
 # Site settings
-title: Home page
+title: Home
 author: Phil Garner
 # email: Phil.Garner@idiap.ch
 description: >
   These pages contain information about my work, publications and software.
 
-baseurl: "~pgarner"
+# These stop it being portable.  Better to leave it at github.
+# baseurl: "~pgarner"
 # url: "http://idiap.ch"
 twitter_username: philipngarner
 github_username:  pgarner
@@ -39,5 +40,3 @@ collections:
 exclude:
  - Gemfile
  - Gemfile.lock
- - deploy.sh
-
