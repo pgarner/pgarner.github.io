@@ -32,9 +32,14 @@ header_pages:
 
 # Collections of things.
 collections:
- - pubs
+ - pubs:
  - appendices
  - ssp-course
+
+collections:
+  # Flatten pubs so the pages see the style sheet regardless of baseurl
+  pubs:
+    permalink: /:name
 
 # Exclude from processing.
 exclude:
