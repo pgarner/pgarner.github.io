@@ -31,15 +31,15 @@ header_pages:
  - blog.md
 
 # Collections of things.
+# Flatten the publications so the css path works with baseurls
 collections:
- - pubs:
- - appendices
- - ssp-course
-
-collections:
-  # Flatten pubs so the pages see the style sheet regardless of baseurl
-  pubs:
-    permalink: /:name
+ pubs:
+   permalink: /:name
+   output: true
+ appendices:
+   output: true
+ ssp-course:
+   output: true
 
 # Exclude from processing.
 exclude:
