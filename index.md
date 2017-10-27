@@ -10,7 +10,8 @@ layout: page
 I work within the broader Speech and Audio Processing group at
 [Idiap Research Institute](http://www.idiap.ch/), with particular focus on the
 conjunction of speech recognition and speech synthesis.  In each case, I try to
-focus on physiologically plausible systems. Here is a short [bio](ieee-bio).
+focus on physiologically plausible systems. Here is a short
+[bio](ieee-bio.html).
 
 # Paper trail
 
@@ -58,6 +59,6 @@ I hold a [lecturer position](http://people.epfl.ch/philip.garner) at
 
 # Also...
 
-For a long while I wasn't in [facebook](facebook). I've since bought into the
-social networking world, including
+For a long while I wasn't in [facebook](facebook.html). I've since bought into
+the social networking world, including
 [LinkedIn](http://www.linkedin.com/in/philipngarner).
