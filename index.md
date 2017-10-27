@@ -55,7 +55,7 @@ More recent work is on my [GitHub](http://github.com/pgarner) page.
 
 I hold a [lecturer position](http://people.epfl.ch/philip.garner) at
 [EPFL](http://www.epfl.ch/), and (a while ago now) taught a
-[course on Speech Signal Processing](ssp-course).
+[course on Speech Signal Processing](ssp-course.html).
 
 # Also...
 
