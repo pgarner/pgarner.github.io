@@ -15,16 +15,16 @@ focus on physiologically plausible systems. Here is a short
 
 # Paper trail
 
-* My [reviewed publications](pubs/phil-pubs). These are also indexed by
+* My [reviewed publications](pubs/phil-pubs.html). These are also indexed by
 [Google Scholar](http://scholar.google.ch/citations?user=KyNTbPkAAAAJ) and
 [ResearchGate](http://www.researchgate.net/profile/Philip_Garner).  Of these,
 Google Scholar is probably the most accurate.
 
-* A (possibly incomplete) list of [my patents](pubs/phil-pats). They are mainly
-US, but in practice most of these began life as either GB or Japan patents; the
-US ones are just easier to reference.
+* A (possibly incomplete) list of [my patents](pubs/phil-pats.html). They are
+mainly US, but in practice most of these began life as either GB or Japan
+patents; the US ones are just easier to reference.
 
-* Other [technical reports](pubs/phil-tech) that are not commercial in
+* Other [technical reports](pubs/phil-tech.html) that are not commercial in
 confidence or published elsewhere. The list includes some MPEG submissions that
 made it into MPEG-7.
 
