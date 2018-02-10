@@ -30,9 +30,8 @@ made it into MPEG-7.
 
 # Contact
 
-Look at the URL above and figure out my email address. It'll probably get
-here. Otherwise try the
-[Idiap contact page](http://www.idiap.ch/en/people/directory/306).
+Look at the URL above and add `@idiap.ch`. It'll probably get here. Otherwise
+try the [Idiap contact page](http://www.idiap.ch/en/people/directory/306).
 
 # Software
 
@@ -53,13 +52,12 @@ More recent work is on my [GitHub](http://github.com/pgarner) page.
 
 # Teaching
 
-I hold a [lecturer position](http://people.epfl.ch/philip.garner) at
-[EPFL](http://www.epfl.ch/), and (a while ago now) taught a
-[course on Speech Signal Processing](ssp-course.html).
+A while ago now, I held a lecturer position] at [EPFL](http://www.epfl.ch/),
+and taught a [course on Speech Signal Processing](ssp-course.html).
 
 # Also...
 
-For a long while I wasn't in facebook. I've since bought into the social
-networking world, including
-[LinkedIn](http://www.linkedin.com/in/philipngarner).  Some are below; finding
-the others is left as an excercise for the user.
+For a long while I wasn't on facebook and the like. I've since bought into the
+social networking world, including
+[LinkedIn](http://www.linkedin.com/in/philipngarner).  Some more are below;
+finding the others is left as an excercise for the user.
