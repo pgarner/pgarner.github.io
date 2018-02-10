@@ -59,6 +59,7 @@ I hold a [lecturer position](http://people.epfl.ch/philip.garner) at
 
 # Also...
 
-For a long while I wasn't in [facebook](facebook.html). I've since bought into
-the social networking world, including
-[LinkedIn](http://www.linkedin.com/in/philipngarner).
+For a long while I wasn't in facebook. I've since bought into the social
+networking world, including
+[LinkedIn](http://www.linkedin.com/in/philipngarner).  Some are below; finding
+the others is left as an excercise for the user.
