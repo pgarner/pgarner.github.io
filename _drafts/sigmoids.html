@@ -1,0 +1,175 @@
+---
+title: Sigmoids
+layout: post
+---
+
+{% include mathjax.html %}
+
+$$
+%
+% Ideally this would be included using Liquid's include function, but it
+% also tries to preprocess it :-/
+%
+\nonumber
+\renewcommand{\Vec}[1]{\boldsymbol{#1}}
+\newcommand{\Exp}[1]{\exp\left(#1\right)}
+\newcommand{\Abs}[1]{\lvert#1\rvert}
+\def\Pr#1{P\left(#1\right)}
+\def\Li#1{p\left(#1\right)}
+\def\CondPr#1#2{P\left(#1\mid#2\right)}
+\def\CondLi#1#2{p\left(#1\mid#2\right)}
+\newcommand{\T}{\mathsf{T}}
+\def\scalar{x}
+\def\Scalar{\Vec{\scalar}}
+\def\auxscalar{y}
+\def\auxScalar{\Vec{\auxscalar}}
+\def\mean{\mu}
+\def\Mean{\Vec{\mean}}
+\def\stddev{\sigma}
+\def\variance{\upsilon}
+\def\Variance{\Vec{\variance}}
+\def\Covariance{\Vec{\Sigma}}
+\newcommand{\class}[0]{c}
+\newcommand{\Class}[0]{\Vec{\class}}
+$$
+
+
+<h1 id="the-boltzmann-distribution">The Boltzmann distribution</h1>
+<p>The Boltzmann distribution arises from statistical mechanics as the probability of something taking one of <span class="math inline">\(N\)</span> states. Mathematically, <span class="math display">\[\label{eq:Boltzmann}
+  \Pr{i} = \frac{1}{Z}e^{-\frac{\epsilon_i}{kT}},\]</span> where <span class="math inline">\(\epsilon_i\)</span> is the energy associated with state <span class="math inline">\(i\)</span>, <span class="math inline">\(k\)</span> is Boltzmann’s constant and <span class="math inline">\(T\)</span> is temperature. Note that it is a discrete distribution; <span class="math inline">\(Z\)</span> is the sum over all states <span class="math display">\[Z = \sum_{j=1}^{N}e^{-\frac{\epsilon_j}{kT}}.\]</span> In the case where there are two states, equation <a href="#eq:Boltzmann" data-reference-type="ref" data-reference="eq:Boltzmann">[eq:Boltzmann]</a> can be written <span class="math display">\[\Pr{i} = \frac{1}{1+\exp\left(
+      -\frac{\epsilon_2-\epsilon_1}{kT}
+    \right)},\]</span> which is a sigmoid. So, the sigmoid is a well known function arising from statistics; it is indicative of the probability of a system taking one of two states. However, its definition in terms of energy is not so helpful in a deep learning sense.</p>
+<h1 id="general-probabilistic-formulation">General probabilistic formulation</h1>
+<p>Say we have an observation vector, <span class="math inline">\(\Scalar\)</span>, and we want the probability that it belongs to class <span class="math inline">\(i\)</span>, where <span class="math inline">\(i\in\lbrace 1, 2,\dots, C\rbrace\)</span>. The Bayesian solution is <span class="math display">\[\label{eq:Bayes}
+  \CondPr{c_i}{\Scalar} =
+  \frac
+  {\CondLi{\Scalar}{c_i}\Pr{c_i}}
+  {\sum_{j=1}^C\CondLi{\Scalar}{c_j}\Pr{c_j}},\]</span> where <span class="math inline">\(c_i\)</span> refers to the event that the class takes value <span class="math inline">\(i\)</span>, and <span class="math inline">\(\Scalar\)</span> refers to the event that the observation random variable takes value <span class="math inline">\(\Scalar\)</span>.</p>
+<p>If there are only two classes, <span class="math inline">\(C=2\)</span>, equation <a href="#eq:Bayes" data-reference-type="eqref" data-reference="eq:Bayes">[eq:Bayes]</a> can be written for class <span class="math inline">\(1\)</span> as <span class="math display">\[\begin{aligned}
+  \CondPr{c_1}{\Scalar}
+  &amp;= \frac{\CondLi{\Scalar}{c_1}\Pr{c_1}}
+    {\CondLi{\Scalar}{c_1}\Pr{c_1}+
+    \CondLi{\Scalar}{c_2}\Pr{c_2}} \\
+  \label{eq:BayesTwo}
+  &amp;= \frac{1}
+    {1+\dfrac{\CondLi{\Scalar}{c_2}\Pr{c_2}}
+    {\CondLi{\Scalar}{c_1}\Pr{c_1}}}.\end{aligned}\]</span> In the two class case, the concept of belonging to a class can also be interpreted as containing a feature. In this sense, equation <a href="#eq:BayesTwo" data-reference-type="eqref" data-reference="eq:BayesTwo">[eq:BayesTwo]</a> is the probability that feature <span class="math inline">\(1\)</span> is present.</p>
+<h1 id="the-two-class-gaussian-case">The two class Gaussian case</h1>
+<p>Assume <span class="math inline">\(\CondLi{\Scalar}{c_i}\)</span> to be distributed as multivariate Gaussian, i.e., <span class="math display">\[\begin{aligned}
+  \CondLi{\Scalar}{c_i}
+  &amp;=
+    \frac{1}{\sqrt{2\pi}^p\Abs{\Covariance_i}^{1/2}}
+    \exp\left(
+    -\frac{1}{2}(\Scalar-\Mean_i)^\T\Covariance_i^{-1}(\Scalar-\Mean_i)
+    \right) \\
+  &amp;=
+    \label{eq:logGauss}
+    \frac{1}{\sqrt{2\pi}^p\Abs{\Covariance_i}^{1/2}}
+    \exp\left(-\frac{1}{2}\Scalar^\T\Covariance_i^{-1}\Scalar\right)
+    \exp\left(
+      \Mean_i^\T\Covariance_i^{-1}\Scalar
+      -\frac{1}{2}\Mean_i^\T\Covariance_i^{-1}\Mean_i
+    \right).\end{aligned}\]</span> Further, define <span class="math inline">\(\Covariance_i = \Covariance\)</span>, so all covariances are the same. If we now substitute equation <a href="#eq:logGauss" data-reference-type="eqref" data-reference="eq:logGauss">[eq:logGauss]</a> into <a href="#eq:BayesTwo" data-reference-type="eqref" data-reference="eq:BayesTwo">[eq:BayesTwo]</a>, notice the quadratic terms cancel, giving <span class="math display">\[\CondPr{c_1}{\Scalar} =
+  \frac{1}{
+    1+
+    \exp\left(
+      \Mean_2^\T\Covariance^{-1}\Scalar
+      -\frac{1}{2}\Mean_2^\T\Covariance^{-1}\Mean_2
+      -\Mean_1^\T\Covariance^{-1}\Scalar
+      +\frac{1}{2}\Mean_1^\T\Covariance^{-1}\Mean_1
+    \right)
+    \frac{\Pr{c_2}}{\Pr{c_1}}
+  }.\]</span> Writing <span class="math display">\[\begin{aligned}
+  \Vec{\omega}^\T &amp;= (\Mean_1-\Mean_2)^\T\Covariance^{-1} \\
+  \label{eq:TwoClassBias}
+  \upsilon&amp;=
+      \log\Pr{c_1}
+      - \log\Pr{c_2}
+      -\frac{1}{2}\left(
+      \Mean_1^\T\Covariance^{-1}\Mean_1 -
+      \Mean_2^\T\Covariance^{-1}\Mean_2
+      \right)\end{aligned}\]</span> yields <span class="math display">\[\CondPr{c_1}{\Scalar} =
+  \frac{1}{
+    1+
+    \exp\left(-(\Vec{\omega}^\T\Scalar + \upsilon\right))
+  },\]</span> which is a sigmoid. However, in contrast to the Boltzmann case, the parameters are clearly related to Gaussian statistics and lead to a weighted sum of components of an input vector. This is undoubtedly the basis of logistic regression. In the context of MLPs, the relationship was pointed out by <span class="citation" data-cites="Bridle1990a"></span>. It is also given by <span class="citation" data-cites="Bishop1995"></span>.</p>
+<p>Notice also that <span class="math inline">\(\Covariance\)</span> could be constrained further to be diagonal, spherical or even to unity in all dimensions; in each case the result is still a sigmoid. Assuming a variance of unity is somehow convenient for visualisation; the result is illustrated in figure <a href="#fig:sigmoid" data-reference-type="ref" data-reference="fig:sigmoid">[fig:sigmoid]</a>.</p>
+
+<h1 id="the-multi-class-gaussian-case">The multi-class Gaussian case</h1>
+<p>Instead of beginning with equation <a href="#eq:BayesTwo" data-reference-type="eqref" data-reference="eq:BayesTwo">[eq:BayesTwo]</a>, consider beginning with the more general equation <a href="#eq:Bayes" data-reference-type="eqref" data-reference="eq:Bayes">[eq:Bayes]</a> and substitute in equation <a href="#eq:logGauss" data-reference-type="eqref" data-reference="eq:logGauss">[eq:logGauss]</a> with the same equal covariances. As above, the normaliser and quadratic terms cancel, this time giving <span class="math display">\[\label{eq:logInter}
+  \CondPr{c_i}{\Scalar} =
+  \frac{
+    \exp\left(
+      \Mean_i^\T\Covariance^{-1}\Scalar
+      -\frac{1}{2}\Mean_i^\T\Covariance^{-1}\Mean_i
+    \right)
+    \Pr{c_i}
+  }{
+    \sum_{j=1}^C
+    \exp\left(
+      \Mean_j^\T\Covariance^{-1}\Scalar
+      -\frac{1}{2}\Mean_j^\T\Covariance^{-1}\Mean_j
+    \right)
+    \Pr{c_j}
+  }.\]</span> Writing <span class="math display">\[\begin{aligned}
+  \Vec{\omega}_i^\T &amp;= \Mean_i^\T\Covariance^{-1} \\
+  \label{eq:NClassBias}
+  \upsilon_i &amp;= \log\Pr{c_i} - \frac{1}{2}\Mean_i^\T\Covariance^{-1}\Mean_i\end{aligned}\]</span> yields <span class="math display">\[\CondPr{c_i}{\Scalar} =
+  \frac{
+    \exp\left(\Vec{\omega}_i^\T\Scalar + \upsilon_i\right)
+  }{
+    \sum_{j=1}^C
+    \exp\left(\Vec{\omega}_j^\T\Scalar + \upsilon_j\right)
+  },\]</span> which is the softmax activation function introduced by <span class="citation" data-cites="Bridle1990a"></span>.</p>
+<p>Again, the weights of the function are directly related to Gaussian statistics. Notice that, if the softmax follows a layer that is strictly positive (i.e., a sigmoid layer), the means, <span class="math inline">\(\Mean_i\)</span>, ought to be positive. Given that <span class="math inline">\(\Covariance\)</span> is necessarily positive definite, it follows that the weights, <span class="math inline">\(\Vec{\omega}_i\)</span>, should also be positive. However, discriminative training could allow negative values; this is illustrated in figure <a href="#fig:unitsigmoid" data-reference-type="ref" data-reference="fig:unitsigmoid">[fig:unitsigmoid]</a>. This implication disappears if the input is, say, <span class="math inline">\(\tanh\)</span>. The hyperbolic tangent function is simply a linear transform of the sigmoid. It is sometimes preferred because it is symmetrical about zero <span class="citation" data-cites="LeCun1998"></span>; however, from a probabilistic point of view, there is no reason to do this. However, it is clear from the Gaussian derivation that <span class="math inline">\(\tanh\)</span> could be beneficial because it causes the means to be negative as well as positive; this removes any sign implication about the weights.</p>
+
+<h1 id="a-multi-beta-interpretation">A multi-beta interpretation</h1>
+<p>It follows from the Gaussian assumption that, if the inputs to a sigmoid or softmax layer are not normally distributed, i.e., if they are outputs of another sigmoid layer, then there should be many inputs. In this case, the central limit theorem applies meaning the weighted sum of the inputs is approximately Gaussian.</p>
+<p>A more rigorous alternative is to assume that the outputs of a sigmoid layer constitute a vector of independent beta distributed samples. Say we have a set of features <span class="math inline">\(\scalar_i, \auxscalar_i\)</span>, <span class="math inline">\(\scalar_i+\auxscalar_i=1\)</span>, <span class="math inline">\(1\le i\le P\)</span>, each (pair) of which is beta distributed <span class="math display">\[\Li{\scalar_i,\auxscalar_i} =
+  \frac{1}{B(\alpha_i,\beta_i)}\scalar_i^{\alpha_i-1}\auxscalar_i^{\beta_i-1}.\]</span> Now imagine that the <span class="math inline">\(\alpha_i\)</span> and <span class="math inline">\(\beta_i\)</span> are representative of a class <span class="math inline">\(c_1\)</span> or <span class="math inline">\(c_2\)</span>, and we are interested in the class. So, if <span class="math inline">\(\Scalar = (\scalar_1,\dots,\scalar_P,\auxscalar_1,\dots,\auxscalar_P)^\T\)</span>, <span class="math display">\[\begin{aligned}
+  \CondLi{\Scalar}{c_j}
+  &amp;= \prod_{i=1}^P\CondLi{\scalar_i,\auxscalar_i}{c_j} \\
+  &amp;= \prod_{i=1}^P\frac{1}{B(\alpha_{j,i},\beta_{j,i})}
+    \scalar_i^{\alpha_{j,i}-1}\auxscalar_i^{\beta_{j,i}-1} \\
+  &amp;= \Exp{\sum_{i=1}^P -\log B(\alpha_{j,i},\beta_{j,i}) +
+    (\alpha_{j,i}-1)\log(\scalar_i) + (\beta_{j,i}-1)\log(\auxscalar_i)}\end{aligned}\]</span> Writing <span class="math display">\[\begin{aligned}
+  \Vec{\alpha}_j
+  &amp;= (\alpha_{j,1},\dots,\alpha_{j,P},\beta_{j,1},\dots,\beta_{j,P})^\T, \\
+  \label{eq:Weights}
+  \Vec{\omega}&amp;= \Vec{\alpha}_1-\Vec{\alpha}_2 \\
+  \upsilon&amp;=
+      \log\Pr{c_1}
+      - \log\Pr{c_2}
+      - \sum_{i=1}^P\left[
+        \log B(\alpha_{1,i},\beta_{1,i}) - \log B(\alpha_{2,i},\beta_{2,i})
+      \right].\end{aligned}\]</span> and substituting into equation <a href="#eq:BayesTwo" data-reference-type="eqref" data-reference="eq:BayesTwo">[eq:BayesTwo]</a> yields <span class="math display">\[\label{eq:betasigmoid}
+  \CondPr{c_1}{\Scalar} =
+  \frac{1}{
+    1+
+    \exp\left(-(\Vec{\omega}^\T\log(\Scalar) + \upsilon)\right)
+  },\]</span> which is a sigmoid, but defined on the logarithm of the features. a similar substitution into the multi-class case is also possible cf. the softmax derivation above.</p>
+<p>If the features are themselves outputs of a sigmoid in the previous layer of an MLP, it makes sense to calculate the logarithm of the sigmoid directly: <span class="math display">\[\label{eq:LogSig}
+  \log\left(
+    \frac{1}{
+      1+
+      \exp\left(-(\Vec{\omega}_i^\T\Scalar + \upsilon_i)\right)
+    }
+  \right)
+  = - \log\left[1+\exp\left(-(\Vec{\omega}_i^\T\Scalar + \upsilon_i)\right)\right],\]</span> which is (a negative version of) the softplus of <span class="citation" data-cites="Dugas2001"></span>. In fact, <span class="citation" data-cites="Dugas2001"></span> derive the function as the integral of a sigmoid. It hence has positive first and second derivatives, which in turn are appropriate for pricing of European stock options in a regression sense.</p>
+<p>The minus sign in equation <a href="#eq:LogSig" data-reference-type="eqref" data-reference="eq:LogSig">[eq:LogSig]</a> has the effect of multiplying all the weights by -1, switching the alphas in <a href="#eq:Weights" data-reference-type="eqref" data-reference="eq:Weights">[eq:Weights]</a>, and causing the activation function to recognise the “other” class.</p>
+<p>Notice that, in the two class case, equation <a href="#eq:Weights" data-reference-type="eqref" data-reference="eq:Weights">[eq:Weights]</a> can be positive or negative. In the multi-class (softmax) case, however, the weights would be <span class="math inline">\(\alpha_{i,j}-1\)</span>, which is very likely to be positive (or negative if the sign of <span class="math inline">\(\log(\Scalar)\)</span> is switched). It is a constraint that is not normally applied.</p>
+<p>As written above, the beta distribution is a distribution over two inputs with a constraint that <span class="math inline">\(\scalar_i+\auxscalar_i=1\)</span>. Usual MLP training mechanisms impose no such constraints. It may be more realistic to assume that <span class="math inline">\(\beta_i=1\)</span> implying that all <span class="math inline">\(\auxscalar_i\)</span> disappear and <span class="math display">\[\Li{\scalar_i} =
+  \alpha_i\scalar_i^{\alpha_i-1}.\]</span> This is illustrated in figure <a href="#fig:Beta" data-reference-type="ref" data-reference="fig:Beta">[fig:Beta]</a>.</p>
+
+<figure>
+<img src="beta.svg" alt="Beta distributions, f(\alpha,\beta) = \CondLi{x}{\alpha,\beta} with \beta=1." /><figcaption>Beta distributions, <span class="math inline">\(f(\alpha,\beta) = \CondLi{x}{\alpha,\beta}\)</span> with <span class="math inline">\(\beta=1\)</span>.<span label="fig:Beta"></span></figcaption>
+</figure>
+<p>We would expect the distribution to be the other way around, i.e., the probability of the feature exisiting is small, and the feature vector is sparse. This in fact follows from the minus sign in equation <a href="#eq:LogSig" data-reference-type="eqref" data-reference="eq:LogSig">[eq:LogSig]</a> discussed above.</p>
+<h1 id="the-piece-wise-linear-approximation">The piece-wise linear approximation</h1>
+<p>If we define <span class="math display">\[y = \Vec{\omega}_i^\T\Scalar + \upsilon_i\]</span> and consider equation <a href="#eq:LogSig" data-reference-type="eqref" data-reference="eq:LogSig">[eq:LogSig]</a>, notice that for large negative <span class="math inline">\(y\)</span> <span class="math display">\[-\log\left[1+\exp(-y)\right] \approx y\]</span> and for large positive <span class="math inline">\(y\)</span> <span class="math display">\[-\log\left[1+\exp(-y)\right] \approx 0\]</span> so <span class="math display">\[-\log\left[1+\exp(-y)\right]
+  \approx \max(0,-y)\]</span> which is a ReLU (rectifying linear unit). The ReLU was first used in an MLP by <span class="citation" data-cites="Sanger1989"></span>. The relationship between ReLU and softplus was pointed out by <span class="citation" data-cites="Glorot2011"></span>.</p>
+<p>The relationship between the sigmoid, softplus and ReLU is illustrated in figure <a href="#fig:ReLU" data-reference-type="ref" data-reference="fig:ReLU">[fig:ReLU]</a>.</p>
+
+<figure>
+<img src="relu.svg" alt="Sigmoid, log sigmoid and ReLU functions." /><figcaption>Sigmoid, log sigmoid and ReLU functions.<span label="fig:ReLU"></span></figcaption>
+</figure>
