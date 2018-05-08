@@ -1,0 +1,63 @@
+---
+title: Kalman basics
+layout: post
+---
+
+{% include mathjax.html %}
+
+$$
+\nonumber
+\def\Pr#1{P\left(#1\right)}
+\def\Li#1{p\left(#1\right)}
+\def\CondPr#1#2{P\left(#1\mid#2\right)}
+\def\CondLi#1#2{p\left(#1\mid#2\right)}
+\def\scalar{x}
+\newcommand{\st}{\lambda}
+\newcommand{\ob}{\scalar}
+$$
+
+<p>The Kalman smoother arises when you have a sequence of <span class="math inline">\(N\)</span> observations, <span class="math inline">\(\scalar_1\dots\scalar_N\)</span>, and you want to infer a sequence of unobserved states, <span class="math inline">\(\lambda_1\dots\lambda_N\)</span>; the states follow a first order Markov process, then the observations depend on the states (see the diagram below). Explanations of Kalman smoothers tend to start with the filter and then obfuscate it by blurring in a bunch of tricky Gaussian convolutions. Here we start at the top and derive the recursions without worrying about the actual distributions; they can be added later.</p>
+
+<p><img src="/assets/posts/tikz-kalman.svg" alt="image" /></p>
+<p>State <span class="math inline">\(i\)</span> trivially depends upon state <span class="math inline">\(i-1\)</span>, but there is a less trivial dependency on state <span class="math inline">\(i+1\)</span>. So the first thing is integrate it out; this defines the Kalman smoother: <span class="math display">\[\begin{aligned}
+  \underbrace{\CondLi{\lambda_i}{\scalar_1\dots\scalar_N}}_{\text{Smoother }i}
+  &amp;= \int d\lambda_{i+1}\,
+    \CondLi{\lambda_i}{\lambda_{i+1},\scalar_1\dots\scalar_N}
+    \CondLi{\lambda_{i+1}}{\scalar_1\dots\scalar_N}, \\
+  &amp;= \int d\lambda_{i+1}\,
+    \CondLi{\lambda_i}{\lambda_{i+1},\scalar_1\dots\scalar_i}
+    \underbrace{\CondLi{\lambda_{i+1}}{\scalar_1\dots\scalar_N}}_{\text{Smoother }i+1}.\end{aligned}\]</span> So it’s recursive in the smoother term. Notice the conditional independence in the second line: given state <span class="math inline">\(i+1\)</span>, we don’t need the observations after that. The inference is the wrong way around in the first term though, so <span class="math display">\[\begin{aligned}
+  \CondLi{\lambda_i}{\lambda_{i+1},\scalar_1\dots\scalar_i}
+  &amp;= \frac{
+    \CondLi{\lambda_{i+1}}{\lambda_i,\scalar_1\dots\scalar_i}
+    \CondLi{\lambda_i}{\scalar_1\dots\scalar_i}
+  }{
+    \CondLi{\lambda_{i+1}}{\scalar_1\dots\scalar_i}
+  }, \\
+  &amp;= \frac{
+    \CondLi{\lambda_{i+1}}{\lambda_i}\CondLi{\lambda_i}{\scalar_1\dots\scalar_i}
+  }{
+    \CondLi{\lambda_{i+1}}{\scalar_1\dots\scalar_i}
+  }.\end{aligned}\]</span> That final term in the numerator is now similar to the original question, but independent of future observatons; that is the Kalman filter. It is evaluated by considering the current observation: <span class="math display">\[\begin{aligned}
+  \underbrace{\CondLi{\lambda_i}{\scalar_1\dots\scalar_i}}_{\text{Filter }i}
+  &amp;= \frac{
+    \CondLi{\scalar_i}{\lambda_i,\scalar_1\dots\scalar_{i-1}}
+    \CondLi{\lambda_i}{\scalar_1\dots\scalar_{i-1}}
+    }{\CondLi{\scalar_i}{\scalar_1\dots\scalar_{i-1}}}, \\
+  &amp;= \frac{
+    \CondLi{\scalar_i}{\lambda_i}
+    \CondLi{\lambda_i}{\scalar_1\dots\scalar_{i-1}}
+    }{\CondLi{\scalar_i}{\scalar_1\dots\scalar_{i-1}}}.\end{aligned}\]</span> Again, some observations become redundant given knowledge of state <span class="math inline">\(i\)</span>. The final term in the numerator is the Kalman predictor; it is evaluated using the trivial relationship between states <span class="math inline">\(i\)</span> and <span class="math inline">\(i-1\)</span>: <span class="math display">\[\begin{aligned}
+  \underbrace{\CondLi{\lambda_i}{\scalar_1\dots\scalar_{i-1}}}_{\text{Predictor }i}
+  &amp;= \int d\lambda_{i-1}\,
+    \CondLi{\lambda_i}{\lambda_{i-1},\scalar_1\dots\scalar_{i-1}}
+    \CondLi{\lambda_{i-1}}{\scalar_1\dots\scalar_{i-1}}, \\
+  &amp;= \int d\lambda_{i-1}\,
+    \CondLi{\lambda_i}{\lambda_{i-1}}
+    \underbrace{\CondLi{\lambda_{i-1}}{\scalar_1\dots\scalar_{i-1}}}_{\text{Filter }i-1}.\end{aligned}\]</span> So the filter evaluation is recursive given the predictor.</p>
+<p>The evaluation of the whole thing involves working through the equations in the opposite order to which they’re derived:</p>
+<ol>
+<li><p>Define an initial predictor, <span class="math inline">\(\Li{\lambda_0}\)</span>, to be some distribution.</p></li>
+<li><p>Recurse the filter using the predictor from state <span class="math inline">\(1\)</span> to state <span class="math inline">\(N\)</span>. This yields filter values for each state.</p></li>
+<li><p>Initialise the smoother using the last filter value; recurse the smoother backwards from state <span class="math inline">\(N\)</span> to state <span class="math inline">\(1\)</span>.</p></li>
+</ol>
