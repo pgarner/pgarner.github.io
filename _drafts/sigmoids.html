@@ -1,5 +1,5 @@
 ---
-title: Sigmoids
+title: Sigmoids and Bayes theorem
 layout: post
 ---
 
@@ -33,6 +33,17 @@ $$
 \newcommand{\Class}[0]{\Vec{\class}}
 $$
 
+<h1>Introduction</h1>
+
+  This text is taken from a memo I wrote a year ago (note to self: publish
+  memo).  It's here partially as a means to figure out how to convert LaTeX to
+  web posts, but mainly to show two things:
+  <ol>
+    <li>That both sigmoid and softmax activation functions derive from basic
+      Gaussian classifiers</li>
+    <li>That ReLU activation functions also derive from sigmoids with
+    reasonable distribution assumptions.</li>
+  </ol>
 
 <h1 id="the-boltzmann-distribution">The Boltzmann distribution</h1>
 <p>The Boltzmann distribution arises from statistical mechanics as the probability of something taking one of <span class="math inline">\(N\)</span> states. Mathematically, <span class="math display">\[\label{eq:Boltzmann}

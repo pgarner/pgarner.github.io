@@ -16,9 +16,7 @@ focus on physiologically plausible systems. Here is a short
 # Paper trail
 
 * My [reviewed publications](png-pubs.html). These are also indexed by
-[Google Scholar](http://scholar.google.ch/citations?user=KyNTbPkAAAAJ) and
-[ResearchGate](http://www.researchgate.net/profile/Philip_Garner).  Of these,
-Google Scholar is probably the most accurate.
+[Google Scholar](http://scholar.google.ch/citations?user=KyNTbPkAAAAJ).
 
 * A (possibly incomplete) list of [my patents](png-pats.html). They are
 mainly US, but in practice most of these began life as either GB or Japan
