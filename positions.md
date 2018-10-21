@@ -26,9 +26,7 @@ you are undecided, a post-doc can provide time to make an informed decision.
 
 # Interns
 
-I have one intern opening
-
-* [Spiking Networks for Prosody Synthesis](http://www.idiap.ch/education-and-jobs/job-10231)
+Right now I don't have internship openings.
 
 Unless you have your own funding, interns are funded by Idiap with a stipend of
 CHF 2,000 per month.  In Martigny, this will pay rent, food and (some) beer;
