@@ -41,9 +41,9 @@ It contains, amongst other things, a feature extractor and
 [continuous pitch estimator](http://publications.idiap.ch/index.php/publications/show/2451).
 * [libssp](https://github.com/idiap/libssp) duplicates some functionality of
 SSP in a C++ library.
-* [Juicer](http://juicer.amiproject.org/juicer) is a collection of ASR decoders.  It is not currently under active development; most of the functionality is available in [Kaldi](http://kaldi-asr.org).  However,
+* [Juicer](https://github.com/idiap/juicer) is a collection of ASR decoders.  It is not currently under active development; most of the functionality is available in [Kaldi](http://kaldi-asr.org).  However,
 * I wrote and actively maintain
-[Tracter](http://juicer.amiproject.org/tracter), a data-flow framework that
+[Tracter](https://github.com/idiap/tracter), a data-flow framework that
 forms the feature acquisition mechanism of Juicer.  Tracter wraps several other
 packages, including libssp.
 
