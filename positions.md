@@ -14,9 +14,10 @@ funding.
 
 # Post doctoral researchers
 
-There are several postdoc positions open, mainly on collaborations within
-Switzerland.  They are representated by this post:
+I have one or two positions open.  The first of these is specifically working
+with Swisscom's digial lab in Lausanne; the second is more generic
 
+* [Domain adaptation for speech and language processing](http://www.idiap.ch/education-and-jobs/job-10259)
 * [Natural language processing and understanding in the context of speech recognition](http://www.idiap.ch/education-and-jobs/job-10251)
 
 Idiap can be a good place to do a post-doc.  If you want an academic career, it
