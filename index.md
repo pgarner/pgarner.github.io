@@ -52,7 +52,10 @@ More recent work is on my [GitHub](http://github.com/pgarner) page.
 # Teaching
 
 A while ago now, I held a lecturer position at [EPFL](http://www.epfl.ch/), and
-taught a [course on Speech Signal Processing](ssp-course.html).
+taught a [course on Speech Signal Processing](ssp-course.html).  Beginning in
+May 2019, I will teach the course "Fundamentals of Statistics for AI" with
+[David Ginsbourger](http://www.ginsbourger.ch/) and colleagues for
+[UniDistance](https://distanceuniversity.ch/artificial-intelligence/master/programme/).
 
 # Also...
 
