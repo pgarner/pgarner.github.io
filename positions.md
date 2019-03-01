@@ -25,6 +25,16 @@ is a springboard to a position elsewhere.  If you want to run a startup, it is
 easy to transition into the [IdeArk incubator](http://www.ideark.ch/en/).  If
 you are undecided, a post-doc can provide time to make an informed decision.
 
+# Engineers
+
+Recently we have more and more tech-transfer opportunities.  To this end we
+open a position for one or more R\&D engineers
+
+* [R&D Engineer in Speech Processing](http://www.idiap.ch/education-and-jobs/job-10260)
+
+The position would suit someone with a bachelors, masters or even PhD, but who
+perhaps does not want an academic career.
+
 # Interns
 
 Right now I don't have internship openings.
