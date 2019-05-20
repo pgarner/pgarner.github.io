@@ -26,11 +26,9 @@ patents; the US ones are just easier to reference.
 confidence or published elsewhere. The list includes some MPEG submissions that
 made it into MPEG-7.
 
-# Contact
+# Boards
 
-Look at the username above and add `@idiap.ch`. It'll probably get
-here. Otherwise try the
-[Idiap contact page](http://www.idiap.ch/en/people/directory/306).
+I'm a Senior Area Editor for [IEEE Signal Processing Letters](https://signalprocessingsociety.org/publications-resources/ieee-signal-processing-letters/editorial-board).  I'm also on the Editorial Board for [Speech Communication](https://www.journals.elsevier.com/speech-communication/editorial-board).
 
 # Software
 
@@ -56,6 +54,12 @@ taught a [course on Speech Signal Processing](ssp-course.html).  Beginning in
 May 2019, I will teach the course "Fundamentals of Statistics for AI" with
 [David Ginsbourger](http://www.ginsbourger.ch/) and colleagues for
 [UniDistance](https://distanceuniversity.ch/artificial-intelligence/master/programme/).
+
+# Contact
+
+Look at the username above and add `@idiap.ch`. It'll probably get
+here. Otherwise try the
+[Idiap contact page](http://www.idiap.ch/en/people/directory/306).
 
 # Also...
 

@@ -24,4 +24,6 @@ development of speech recognition, synthesis and signal processing.
 
 He is a senior member of the IEEE, and has published internationally in
 conference proceedings, patent, journal and book form as well as serving as
-coordinating editor of ISO/IEC 15938-4 (MPEG-7 Audio).
+coordinating editor of ISO/IEC 15938-4 (MPEG-7 Audio).  He currently serves as
+senior area editor for IEEE Signal Processing Letters and on the editorial
+board of Speech Communication.
