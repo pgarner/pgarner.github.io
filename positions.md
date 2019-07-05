@@ -35,14 +35,12 @@ you are undecided, a post-doc can provide time to make an informed decision.
 # Engineers
 
 Recently we have more and more tech-transfer opportunities.  To this end we
-open a position for one or more R&D engineers
-
-* [R&D Engineer in Speech Processing](http://www.idiap.ch/education-and-jobs/job-10260)
+created the post of R&D engineer.  However, there are no open positions right
+now.
 
 The position would suit someone with a bachelors, masters or even PhD, but who
-perhaps does not want an academic career.  We've already hired the one for
-which it was opened, but more similar positions are expected so the slot
-remains there.
+perhaps does not want an academic career.
+
 
 # Interns
 

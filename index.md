@@ -63,7 +63,7 @@ here. Otherwise try the
 
 # Also...
 
-For a long while I wasn't on facebook and the like. I've since bought into the
-social networking world, including
+For a long while I wasn't on [facebook](facebook.html) and the like. I've since
+bought into the social networking world, including
 [LinkedIn](http://www.linkedin.com/in/philipngarner).  Some more are below;
-finding the others is left as an excercise for the user.
+finding the others is left as an exercise for the user.
