@@ -14,10 +14,8 @@ funding.
 
 # PhD students
 
-I have one opening for a PhD student on a new SNSF-funded project NAST - Neural
-Architectures for Speech Technology
-
-* [Spiking neural architectures for speech prosody](http://www.idiap.ch/education-and-jobs/job-10263)
+I have one opening for a PhD student on a new SNSF-funded project:
+* [Neural Architectures for Speech Technology](https://www.idiap.ch/webapps/jobs/ors/applicant/position/index.php?PHP_APE_DR_9e581720b5ef40dc7af21c41bac4f4eb=%7B__TO%3D%27detail%27%3B__PK%3D%2710275%27%7D)
 
 All the information is on that page.  SNSF is good for PhDs; it's real research
 funding including travel and without commitments to industrial or EU project
