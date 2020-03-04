@@ -14,16 +14,16 @@ funding.
 
 # PhD students
 
-I have one opening for a PhD student on a new SNSF-funded project:
-* [Neural Architectures for Speech Technology](https://www.idiap.ch/webapps/jobs/ors/applicant/position/index.php?PHP_APE_DR_9e581720b5ef40dc7af21c41bac4f4eb=%7B__TO%3D%27detail%27%3B__PK%3D%2710275%27%7D)
+With Hervé Bourlard, I have one opening for a PhD student on a new SNSF NCCR project:
+* [Low Level Mechanisms of Language Evolution](http://www.idiap.ch/education-and-jobs/job-10284)
 
 All the information is on that page.  SNSF is good for PhDs; it's real research
 funding including travel and without commitments to industrial or EU project
-partners.
+partners.  An NCCR is a good opportunity to collaborate with other similar work in Switzerland
 
 # Post doctoral researchers
 
-Right now I have no openings for post-docs.
+Right now I have no openings for post-docs, but there are several within the wider speech group (see the jobs page above).
 
 Idiap can be a good place to do a post-doc.  If you want an academic career, it
 is a springboard to a position elsewhere.  If you want to run a startup, it is
@@ -42,7 +42,7 @@ perhaps does not want an academic career.
 
 # Interns
 
-Right now I don't have internship openings.
+Right now I don't have funding for internships (although if you are funded feel free to get in touch).
 
 Unless you have your own funding, interns are funded by Idiap with a stipend of
 CHF ~2,500 per month.  In Martigny, this will pay rent, food and (some) beer;

@@ -32,28 +32,29 @@ I'm a Senior Area Editor for [IEEE Signal Processing Letters](https://signalproc
 
 # Software
 
-* [ISS](https://github.com/idiap/iss) is a framework for building and
-evaluating ASR models.
+* [BuSLR](https://github.com/idiap/buslr) is a build system.  It contains conda recipes for some speech & language software along with an experimental system based around cmake.
 * [SSP](https://github.com/idiap/ssp) is a signal processing library in python.
 It contains, amongst other things, a feature extractor and
 [continuous pitch estimator](http://publications.idiap.ch/index.php/publications/show/2451).
 * [libssp](https://github.com/idiap/libssp) duplicates some functionality of
 SSP in a C++ library.
+* [ISS](https://github.com/idiap/iss) is a framework for building and
+evaluating ASR models.
 * [Juicer](https://github.com/idiap/juicer) is a collection of ASR decoders.  It is not currently under active development; most of the functionality is available in [Kaldi](http://kaldi-asr.org).  However,
-* I wrote and actively maintain
+* I wrote and (infrequently) maintain
 [Tracter](https://github.com/idiap/tracter), a data-flow framework that
 forms the feature acquisition mechanism of Juicer.  Tracter wraps several other
 packages, including libssp.
 
-More recent work is on my [GitHub](http://github.com/pgarner) page.
+Other work is on my [GitHub](http://github.com/pgarner) page.
 
 # Teaching
 
-A while ago now, I held a lecturer position at [EPFL](http://www.epfl.ch/), and
-taught a [course on Speech Signal Processing](ssp-course.html).  Beginning in
-May 2019, I will teach the course "Fundamentals of Statistics for AI" with
+Since May 2019, I teach the course "Fundamentals of Statistics for AI" with
 [David Ginsbourger](http://www.ginsbourger.ch/) and colleagues for
 [UniDistance](https://distanceuniversity.ch/artificial-intelligence/master/programme/).
+A while ago now, I held a lecturer position at [EPFL](http://www.epfl.ch/), and
+taught a [course on Speech Signal Processing](ssp-course.html).
 
 # Contact
 

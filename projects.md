@@ -3,31 +3,37 @@ title: Projects
 layout: page
 ---
 
-Including collaborations and alumni
+Including collaborations and alumni.  All my SNSF funded projects are on the [SNSF P3](http://p3.snf.ch/person-547153-Garner-Philip) pages.
 
 # Current projects
 
-CTI 27674.1 PFES-ES
+NAST
 
-* With Petr Motlicek and a "global industry partner", we aim to bring speech to
-  consumer grade embedded systems.
+* [NAST](http://p3.snf.ch/Project-185010) is a follow up to MASS in which we will generalise that work to generic neural architectures.  We aim to embed physiologically and statistically plausible components into standard deep learning architectures to bring them closer to true analogues of biological systems.  It funds [Sibo](https://www.idiap.ch/~stong/) and [Alex](https://www.idiap.ch/~abittar/).
+
+DAHL
+
+* DAHL is a collaboration with Swisscom in which [Abbas](https://www.idiap.ch/~akhosravani/) and I evaluate state of the art in ASR for Swisscom's particular requirements.
+
+SHAPED
+
+* With [Petr Motlicek](https://people.idiap.ch/pmotlic) and Logitech, we aim to bring speech to consumer grade embedded systems.  Working with [Niccolò](https://nantonel.github.io/) and [Vincent](https://www.idiap.ch/~vpollet/).
+
+MASS
+
+* [MASS](http://p3.snf.ch/Project-165545) is "Multilingual Affective Speech Synthesis".  It continues the work begun in SIWIS and SP2 by attempting to model the prosody of emotion.  It funds [Bastian](https://www.idiap.ch/~bschnell/).
+
+# Previous projects
 
 DeepCharisma
 
 * Working with Olivier Bornet, John Antonakis and Dominic Rohner, we try to
   infer charisma using deep learning.
 
-MASS
-
-* MASS is "Multilingual Affective Speech Synthesis".  It continues the work
-  begun in SIWIS and SP2 by attempting to model the prosody of emotion.
-
 SUMMA
 
 * [SUMMA](http://www.summa-project.eu/) is an H2020 funded project on big data
   and multilingual speech processing.
-
-# Previous projects
 
 Swisscom
 
