@@ -7,13 +7,26 @@ Including collaborations and alumni.  All my SNSF funded projects are on the [SN
 
 # Current projects
 
+EvoLang
+
+* In [EvoLang](http://www.snf.ch/en/researchinFocus/nccr/evolving-language/Pages/default.aspx), I work with [James Henderson](https://www.idiap.ch/~jhenderson/) and [Hervé Bourlard](https://people.idiap.ch/bourlard) in "Low Level Mechanisms of Language Evolution".  We hope to model the junction of the human cochlea and the neural system and uncover the means by which the human auditory system can adapt to changing environments.  There is currently one [open position](positions).
+
+CRAGP2
+
+* In a new [Agora](http://www.snf.ch/en/funding/science-communication/agora/Pages/default.aspx) project, and with several Idiap colleagues, we will try to demonstrate speech synthesis in a museum context.
+
+ADeL
+
+* ADeL can be thought of as building on the work done in DeepCharisma, bringing in audio visual modes to investigate how speech and gesture processing can help infer charismatic qualities.  The work is funded by [E4S](https://e4s.center/); it is a collaboration with [Daniel Gatica](https://www.idiap.ch/~gatica/) here at Idiap, with [Marianne Schmid Mast](https://hec.unil.ch/people/mschmidmast) and [John Antonakis](http://hec.unil.ch/people/jantonakis) at UNIL and [Jennifer Jordan](https://www.imd.org/faculty/professors/jennifer-jordan/) and [Alyson Meister](https://www.imd.org/faculty/professors/alyson-meister/) at IMD.
+
+
 NAST
 
 * [NAST](http://p3.snf.ch/Project-185010) is a follow up to MASS in which we will generalise that work to generic neural architectures.  We aim to embed physiologically and statistically plausible components into standard deep learning architectures to bring them closer to true analogues of biological systems.  It funds [Sibo](https://www.idiap.ch/~stong/) and [Alex](https://www.idiap.ch/~abittar/).
 
 DAHL
 
-* DAHL is a collaboration with Swisscom in which [Abbas](https://www.idiap.ch/~akhosravani/) and I evaluate state of the art in ASR for Swisscom's particular requirements.
+* DAHL is a collaboration with Swisscom in which [Abbas](https://www.idiap.ch/~akhosravani/) and I evaluate state of the art in ASR for Swisscom's particular requirements.  We are particularly interested in word-fragment-based methods and how robust they can be to the "orthographic ambiguity" of Swiss German.
 
 SHAPED
 
@@ -22,6 +35,7 @@ SHAPED
 MASS
 
 * [MASS](http://p3.snf.ch/Project-165545) is "Multilingual Affective Speech Synthesis".  It continues the work begun in SIWIS and SP2 by attempting to model the prosody of emotion.  It funds [Bastian](https://www.idiap.ch/~bschnell/).
+
 
 # Previous projects
 
