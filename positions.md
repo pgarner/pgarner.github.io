@@ -14,12 +14,12 @@ funding.
 
 # PhD students
 
-With Hervé Bourlard, I have one opening for a PhD student on a new SNSF NCCR project:
-* [Low Level Mechanisms of Language Evolution](http://www.idiap.ch/education-and-jobs/job-10284)
+I have one opening for a PhD student on a new collaborative project with Adrian Bangerter at UniNe and Marianne Schmid-Mast at UNIL:
+* [Speech recognition and natural language processing for digital interviews
+](http://www.idiap.ch/education-and-jobs/job-10312)
 
 All the information is on that page.  SNSF is good for PhDs; it's real research
-funding including travel and without commitments to industrial or EU project
-partners.  An NCCR is a good opportunity to collaborate with other similar work in Switzerland
+funding including travel and without commitments to industrial partners.  It's also a good opportunity to collaborate with interesting partners.
 
 # Post doctoral researchers
 
