@@ -14,12 +14,16 @@ funding.
 
 # PhD students
 
-I have one opening for a PhD student on a new collaborative project with Adrian Bangerter at UniNe and Marianne Schmid-Mast at UNIL:
+I have one opening for a PhD student on an SNSF project that already funds one other student:
+* [Neural Architectures for Speech Technology](https://www.idiap.ch/education-and-jobs/job-10313)
+
+All the information is on that page.  SNSF is good for PhDs; it's real research
+funding including travel and without commitments to industrial partners.  It's also a good opportunity to collaborate with other students in the group and on related projects.
+
+The digital interview one was filled but some ads may still be live:
 * [Speech recognition and natural language processing for digital interviews
 ](http://www.idiap.ch/education-and-jobs/job-10312)
 
-All the information is on that page.  SNSF is good for PhDs; it's real research
-funding including travel and without commitments to industrial partners.  It's also a good opportunity to collaborate with interesting partners.
 
 # Post doctoral researchers
 
