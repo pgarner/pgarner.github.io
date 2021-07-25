@@ -14,14 +14,7 @@ funding.
 
 # PhD students
 
-I have two openings for PhD students:
-
-* On an SNSF project that already funds one other student: [Neural Architectures for Speech Technology](https://www.idiap.ch/education-and-jobs/job-10313), the project is mainly about machine learning for speech.
-* An another SNSF project, but this time in collaboration with UniNe and UNIL: [Speech recognition and natural language processing for digital interviews
-](http://www.idiap.ch/education-and-jobs/job-10317).  This one is more ASR oriented.
-
-All the information is on those pages.  SNSF is good for PhDs; it's real research funding including travel and without commitments to industrial partners.  It's also a good opportunity to collaborate with other students in the group and on related projects.
-
+Right now I have no PhD positions available.
 
 # Post doctoral researchers
 
@@ -44,7 +37,9 @@ perhaps does not want an academic career.
 
 # Interns
 
-Right now I don't have funding for internships (although if you are funded feel free to get in touch).
+Whilst I don't have explicit funding for internships, I could support one.  Get in touch if you have good reason.
+
+If you are funded feel free to get in touch anytime.
 
 Unless you have your own funding, interns are funded by Idiap with a stipend of
 CHF ~2,500 per month.  In Martigny, this will pay rent, food and (some) beer;
