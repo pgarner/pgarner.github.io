@@ -14,11 +14,16 @@ funding.
 
 # PhD students
 
-Right now I have no PhD positions available.
+I have one opening for a PhD student (or a post-doc) on a collaborative project with Adrian Bangerter at UniNe and Marianne Schmid-Mast at UNIL:
+* [ASR & NLP for structured selection interviews](http://www.idiap.ch/education-and-jobs/job-10330)
+
+All the information is on that page.  SNSF is good for PhDs; it's real research
+funding including travel and without commitments to industrial partners.  It's also a good opportunity to collaborate with interesting partners.
+
 
 # Post doctoral researchers
 
-Right now I have no openings for post-docs, but there are several within the wider speech group (see the jobs page above).
+The PhD Position above would also suit a post-doc.
 
 Idiap can be a good place to do a post-doc.  If you want an academic career, it
 is a springboard to a position elsewhere.  If you want to run a startup, it is
