@@ -7,11 +7,13 @@ layout: page
 
 ![Mugshot](assets/mugshot.jpg){:width="15%"}
 
-I work within the broader Speech and Audio Processing group at
-[Idiap Research Institute](http://www.idiap.ch/), with particular focus on the
-conjunction of speech recognition and speech synthesis.  In each case, I try to
-focus on physiologically plausible systems. Here is a short
-[bio](ieee-bio.html).
+I work generally in the Speech and Audio Processing group at [Idiap Research Institute](http://www.idiap.ch/), and particularly with
+
+* [Alexandre Bittar](https://www.idiap.ch/~abittar/)
+* [Louise Coppieters](https://www.idiap.ch/~lcoppieters/)
+* [Haolin Chen](https://www.idiap.ch/~hchen/)
+
+We focus on the conjunction of speech recognition and speech synthesis.  In each case, we try to focus on physiologically plausible systems. Here is a short [bio](ieee-bio.html).
 
 # Paper trail
 
@@ -32,27 +34,25 @@ I'm a Senior Area Editor for [IEEE Signal Processing Letters](https://signalproc
 
 # Software
 
-* [BuSLR](https://github.com/idiap/buslr) is a build system.  It contains conda recipes for some speech & language software along with an experimental system based around cmake.
+Most work is on my [GitHub](http://github.com/pgarner) page.
+
+* For a while now I've been trying to find a sustainable way of maintaining software for the group. [BuSLR](https://github.com/idiap/buslr) was a failed attempt, but does contain some useful conda recipes.  Right now, the most promising approach is [homebrew](https://docs.brew.sh/), for which I maintain a [tap](https://github.com/pgarner/homebrew-tap).
 * [SSP](https://github.com/idiap/ssp) is a signal processing library in python.
-It contains, amongst other things, a feature extractor and
-[continuous pitch estimator](http://publications.idiap.ch/index.php/publications/show/2451).
-* [libssp](https://github.com/idiap/libssp) duplicates some functionality of
-SSP in a C++ library.
-* [ISS](https://github.com/idiap/iss) is a framework for building and
-evaluating ASR models.
-* [Juicer](https://github.com/idiap/juicer) is a collection of ASR decoders.  It is not currently under active development; most of the functionality is available in [Kaldi](http://kaldi-asr.org).  However,
-* I wrote and (infrequently) maintain
-[Tracter](https://github.com/idiap/tracter), a data-flow framework that
-forms the feature acquisition mechanism of Juicer.  Tracter wraps several other
+It contains, amongst other things, a feature extractor and [continuous pitch estimator](http://publications.idiap.ch/index.php/publications/show/2451). [libssp](https://github.com/idiap/libssp) duplicates some functionality in a C++ library.
+* [ISS](https://github.com/idiap/iss) is/was a framework for building and
+evaluating ASR and TTS models.  Based around HTS it's quite old.
+* I wrote and (infrequently) maintain [Tracter](https://github.com/idiap/tracter), a data-flow framework that
+formed the feature acquisition mechanism of [Juicer](https://github.com/idiap/juicer).  Tracter wraps several other
 packages, including libssp.
 
-Other work is on my [GitHub](http://github.com/pgarner) page.
+Software ages; Juicer and ISS were effectively replaced by [Kaldi](http://kaldi-asr.org).
+
 
 # Teaching
 
-Since May 2019, I teach the course "Fundamentals of Statistics for AI" with
-[David Ginsbourger](http://www.ginsbourger.ch/) and colleagues for
-[UniDistance](https://distanceuniversity.ch/artificial-intelligence/master/programme/).
+Since May 2019, [Ina Kodrasi](https://www.idiap.ch/~ikodrasi/) and I teach the course "Fundamentals of Statistics for AI" for
+[UniDistance](https://distanceuniversity.ch/artificial-intelligence/master/programme/).  The course was originally designed with
+[David Ginsbourger](http://www.ginsbourger.ch/).
 A while ago now, I held a lecturer position at [EPFL](http://www.epfl.ch/), and
 taught a [course on Speech Signal Processing](ssp-course.html).
 
@@ -64,7 +64,4 @@ here. Otherwise try the
 
 # Also...
 
-For a long while I wasn't on [facebook](facebook.html) and the like. I've since
-bought into the social networking world, including
-[LinkedIn](http://www.linkedin.com/in/philipngarner).  Some more are below;
-finding the others is left as an exercise for the user.
+I'm on [LinkedIn](http://www.linkedin.com/in/philipngarner), but have a more on/off relationship with [facebook](facebook.html) and the like.  Some are below; finding any others is left as an exercise for the user.
