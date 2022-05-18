@@ -5,7 +5,7 @@ layout: page
 
 # Who?
 
-![Mugshot](assets/mugshot.jpg){:width="15%"}
+![Mugshot](assets/mugshot.jpg){:width="15%" border="1"}
 
 I work generally in the Speech and Audio Processing group at [Idiap Research Institute](http://www.idiap.ch/), and particularly with
 
