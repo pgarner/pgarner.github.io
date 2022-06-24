@@ -12,7 +12,7 @@ I work generally in the Speech and Audio Processing group at [Idiap Research Ins
 * [Alexandre Bittar](https://www.idiap.ch/~abittar/)
 * [Louise Coppieters](https://www.idiap.ch/~lcoppieters/)
 * [Haolin Chen](https://www.idiap.ch/~hchen/)
-* [Mutian He](https://www.idiap.ch/~mhe/) (Coming soon...)
+* [Mutian He](https://www.idiap.ch/~mhe/)
 
 We work on the conjunction of speech recognition and speech synthesis.  In each case, we try to focus on physiologically plausible systems. Here is a short [bio](ieee-bio.html).
 
