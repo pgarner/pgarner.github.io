@@ -7,19 +7,24 @@ layout: page
 
 ![Mugshot](assets/mugshot.jpg){:width="15%" border="1"}
 
-I work generally in the Speech and Audio Processing group at [Idiap Research Institute](http://www.idiap.ch/), and particularly with
+I am a Senior Research Scientist at [Idiap Research
+Institute](http://www.idiap.ch/), where I lead a team working generally in
+artificial intelligence and particularly in speech processing.  The team
+currently includes
 
 * [Alexandre Bittar](https://www.idiap.ch/~abittar/)
 * [Louise Coppieters](https://www.idiap.ch/~lcoppieters/)
 * [Haolin Chen](https://www.idiap.ch/~hchen/)
 * [Mutian He](https://www.idiap.ch/~mhe/)
+* [Amina Rufai](https://www.idiap.ch/~arufai/)
 
-We work on the conjunction of speech recognition and speech synthesis.  In each case, we try to focus on physiologically plausible systems. Here is a short [bio](ieee-bio.html).
+and is gender balanced.
+We work on the conjunction of speech recognition and speech synthesis.  In each case, we try to focus on physiologically plausible and statistically rigorous systems. Here is a short [bio](ieee-bio.html).
 
 # Paper trail
 
 * My [reviewed publications](png-pubs.html). These are also indexed by
-[Google Scholar](http://idiap.ch/~pgarner/scholar).
+[Google Scholar](http://idiap.ch/~pgarner/scholar) and by [ORCID](https://orcid.org/0000-0002-0814-1348).
 
 * A (possibly incomplete) list of [my patents](png-pats.html). They are
 mainly US, but in practice most of these began life as either GB or Japan
@@ -31,7 +36,7 @@ made it into MPEG-7.
 
 # Boards
 
-I'm a Senior Area Editor for [IEEE Signal Processing Letters](https://signalprocessingsociety.org/publications-resources/ieee-signal-processing-letters/editorial-board).  I'm also on the Editorial Board for [Speech Communication](https://www.journals.elsevier.com/speech-communication/editorial-board).
+I'm a Senior Area Editor for [IEEE Signal Processing Letters](https://signalprocessingsociety.org/publications-resources/ieee-signal-processing-letters/editorial-board), and on the Editorial Board for [Speech Communication](https://www.journals.elsevier.com/speech-communication/editorial-board).
 
 # Software
 
@@ -46,12 +51,12 @@ evaluating ASR and TTS models.  Based around HTS it's quite old.
 formed the feature acquisition mechanism of [Juicer](https://github.com/idiap/juicer).  Tracter wraps several other
 packages, including libssp.
 
-Software ages; Juicer and ISS were effectively replaced by [Kaldi](http://kaldi-asr.org).
+Software ages; Juicer and ISS were effectively replaced by [Kaldi](http://kaldi-asr.org).  In my team we tend to use [pytorch](https://pytorch.org/)-based toolkits now.
 
 
 # Teaching
 
-Since May 2019, [Ina Kodrasi](https://www.idiap.ch/~ikodrasi/) and I teach the course "Fundamentals of Statistics for AI" for
+Between May 2019 and July 2023, [Ina Kodrasi](https://www.idiap.ch/~ikodrasi/) and I taught the course "Fundamentals of Statistics for AI" for
 [UniDistance](https://distanceuniversity.ch/artificial-intelligence/master/programme/).  The course was originally designed with
 [David Ginsbourger](http://www.ginsbourger.ch/).
 A while ago now, I held a lecturer position at [EPFL](http://www.epfl.ch/), and
