@@ -7,7 +7,7 @@ layout: page
 
 ![Mugshot](assets/mugshot.jpg){:width="15%" border="1"}
 
-I am a Senior Research Scientist at [Idiap Research
+I am a Senior Researcher at [Idiap Research
 Institute](http://www.idiap.ch/), where I lead the [Audio Inference Group](group.html).  We work generally in artificial intelligence and particularly in speech processing on the conjunction of recognition and synthesis.  In each case, we try to focus on physiologically plausible and statistically rigorous systems.  Here is a short [bio](ieee-bio.html).
 
 # Paper trail
