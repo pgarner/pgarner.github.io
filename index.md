@@ -8,18 +8,7 @@ layout: page
 ![Mugshot](assets/mugshot.jpg){:width="15%" border="1"}
 
 I am a Senior Research Scientist at [Idiap Research
-Institute](http://www.idiap.ch/), where I lead a team working generally in
-artificial intelligence and particularly in speech processing.  The team
-currently includes
-
-* [Alexandre Bittar](https://www.idiap.ch/~abittar/)
-* [Louise Coppieters](https://www.idiap.ch/~lcoppieters/)
-* [Haolin Chen](https://www.idiap.ch/~hchen/)
-* [Mutian He](https://www.idiap.ch/~mhe/)
-* [Amina Rufai](https://www.idiap.ch/~arufai/)
-
-and is gender balanced.
-We work on the conjunction of speech recognition and speech synthesis.  In each case, we try to focus on physiologically plausible and statistically rigorous systems. Here is a short [bio](ieee-bio.html).
+Institute](http://www.idiap.ch/), where I lead the [Audio Inference Group](group.html).  We work generally in artificial intelligence and particularly in speech processing on the conjunction of recognition and synthesis.  In each case, we try to focus on physiologically plausible and statistically rigorous systems.  Here is a short [bio](ieee-bio.html).
 
 # Paper trail
 

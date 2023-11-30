@@ -23,10 +23,11 @@ minima:
 
 # Specific pages that should appear in the header; order is respected.
 header_pages:
+ - group.md
+ - positions.md
  - projects.md
  - talks.md
  - appendices.md
- - positions.md
  - blog.md
 
 # Collections of things.
