@@ -46,9 +46,10 @@ Software ages; Juicer and ISS were effectively replaced by [Kaldi](http://kaldi-
 # Teaching
 
 Between May 2019 and July 2023, [Ina Kodrasi](https://www.idiap.ch/~ikodrasi/) and I taught the course "Fundamentals of Statistics for AI" for
-[UniDistance](https://distanceuniversity.ch/artificial-intelligence/master/programme/).  The course was originally designed with
+[UniDistance](https://unidistance.ch/en/mathematics-and-computer-science).  The course was originally designed with
 [David Ginsbourger](http://www.ginsbourger.ch/).
-A while ago now, I held a lecturer position at [EPFL](http://www.epfl.ch/), and
+
+Via the [LIDIAP lab](https://www.epfl.ch/labs/idiap/) I hold a [lecturer position at EPFL](https://people.epfl.ch/philip.garner).  A while ago now I
 taught a [course on Speech Signal Processing](ssp-course.html).
 
 # Contact
