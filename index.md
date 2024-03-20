@@ -8,7 +8,7 @@ layout: page
 ![Mugshot](assets/mugshot.jpg){:width="15%" border="1"}
 
 I am a Senior Researcher at [Idiap Research
-Institute](http://www.idiap.ch/), where I lead the [Audio Inference Group](group.html).  We work generally in artificial intelligence and particularly in speech processing on the conjunction of recognition and synthesis.  In each case, we try to focus on physiologically plausible and statistically rigorous systems.  Here is a short [bio](ieee-bio.html).
+Institute](http://www.idiap.ch/), where I lead the [Audio Inference Group](https://www.idiap.ch/en/scientific-research/audio-inference).  We work generally in artificial intelligence and particularly in speech processing on the conjunction of recognition and synthesis.  In each case, we try to focus on physiologically plausible and statistically rigorous systems.  Here is a short [bio](ieee-bio.html).
 
 # Paper trail
 
@@ -31,7 +31,7 @@ I'm a Senior Area Editor for [IEEE Signal Processing Letters](https://signalproc
 
 Most work is on my [GitHub](http://github.com/pgarner) page.
 
-* For a while now I've been trying to find a sustainable way of maintaining software for the group. [BuSLR](https://github.com/idiap/buslr) was a failed attempt, but does contain some useful conda recipes.  Right now, the most promising approach is [homebrew](https://docs.brew.sh/), for which I maintain a [tap](https://github.com/pgarner/homebrew-tap).
+* I spent some time trying to find a sustainable way of maintaining software for the group. [BuSLR](https://github.com/idiap/buslr) was a failed attempt, but does contain some useful conda recipes.  Also promising was [homebrew](https://docs.brew.sh/), for which I made a [tap](https://github.com/pgarner/homebrew-tap).  Finally Ewan came along with a solution based on [modules](https://lmod.readthedocs.io/en/latest/index.html) and [spack](https://spack.io/).
 * [SSP](https://github.com/idiap/ssp) is a signal processing library in python.
 It contains, amongst other things, a feature extractor and [continuous pitch estimator](http://publications.idiap.ch/index.php/publications/show/2451). [libssp](https://github.com/idiap/libssp) duplicates some functionality in a C++ library.
 * [ISS](https://github.com/idiap/iss) is/was a framework for building and
