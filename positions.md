@@ -9,7 +9,7 @@ We are always looking for good people at Idiap.  Any open position will be adver
 
 # Interns
 
-I have funding for internships; the subjects are open, but should be related to the research that is being done in the wider [group](group.html).  The [formal position](https://careers.werecruit.io/en/idiap/offres/topics-in-learning-and-inference-internship-2c0aa2) is on the jobs page.
+I have modest funding for internships; the subjects are open, but should be related to the research that is being done in the wider [group](https://www.idiap.ch/en/scientific-research/audio-inference).
 
 Unless you have your own funding, interns are funded by Idiap with a stipend of CHF ~3,000 per month.  In Martigny, this will pay rent, food and (some) beer; you probably won't save anything.  An internship is suitable for someone doing a masters and needing a project, or with a masters waiting to take a PhD position.  It can also suit current a PhD student wanting to broaden their knowledge.  An internship is not suitable for a PhD graduate unless you have a very clear idea of where you're going next.
 
@@ -17,7 +17,7 @@ If you are funded feel free to get in touch anytime.
 
 # PhD students
 
-I currently have no open PhD positions
+I currently have one open PhD position on [Bayesian Methods for Spiking Networks](https://careers.werecruit.io/en/idiap/offres/phd---bayesian-methods-for-spiking-networks-57e954).  It is a collaboration with colleagues at Mahidol University in Bangkok.
 
 Otherwise, all the information is on the Idiap jobs page.  SNSF is good for PhDs; it's real research funding including travel and without commitments to industrial partners.  It's also a good opportunity to collaborate with interesting partners.
 
