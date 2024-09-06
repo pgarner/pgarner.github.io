@@ -25,7 +25,7 @@ made it into MPEG-7.
 
 # Boards
 
-I'm a Senior Area Editor for [IEEE Signal Processing Letters](https://signalprocessingsociety.org/publications-resources/ieee-signal-processing-letters/editorial-board), and on the Editorial Board for [Speech Communication](https://www.journals.elsevier.com/speech-communication/editorial-board).
+I'm on the Editorial Board for [Speech Communication](https://www.journals.elsevier.com/speech-communication/editorial-board).  Until the spring of 2024 I was a Senior Area Editor for [IEEE Signal Processing Letters](https://signalprocessingsociety.org/publications-resources/ieee-signal-processing-letters/editorial-board).
 
 # Software
 
