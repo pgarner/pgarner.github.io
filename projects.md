@@ -11,23 +11,23 @@ Including collaborations and alumni.  All my SNSF funded projects are on the [SN
 
 Storytelling and first impressions in face-to-face and algorithm-powered digital interviews is a collaboration with [Adrian Bangerter](https://www.unine.ch/ipto/home/collaborateurstrices/adrian-bangerter.html) at UniNe and [Marianne Schmid Mast](https://hec.unil.ch/people/mschmidmast) at UNIL.  We will try to automatically extract the information that the psychologists find to be indicative of job performance from interviews.  The project funds [Mutian He](https://www.idiap.ch/~mhe/) and the best parts of [Daniel Carron](https://www.idiap.ch/~dcarron/).
 
+# Previous projects
+
 ## [NCCR Evolving Language](https://evolvinglanguage.ch/)
 
-I work with [James Henderson](https://www.idiap.ch/~jhenderson/) and [Hervé Bourlard](https://people.idiap.ch/bourlard) in "Low Level Mechanisms of Language Evolution".  We hope to model the junction of the human cochlea and the neural system and uncover the means by which the human auditory system can adapt to changing environments.  It funds [Louise](https://www.idiap.ch/~lcoppieters/)
+I worked with [James Henderson](https://www.idiap.ch/~jhenderson/) and [Hervé Bourlard](https://people.idiap.ch/bourlard) in "Low Level Mechanisms of Language Evolution".  We modelled the junction of the human cochlea and the neural system, uncovering the means by which the human auditory system can adapt to changing environments.  It funded [Louise](https://www.idiap.ch/~lcoppieters/)
 
 ## [NATAI](https://data.snf.ch/grants/grant/191634)
 
-The Nature of Artificial Intelligence is an [Agora](http://www.snf.ch/en/funding/science-communication/agora/Pages/default.aspx) project; with several Idiap colleagues, we will try to demonstrate speech synthesis in a museum context.  The exhibition is now open at the [Musée de la Main](https://museedelamain.ch/).
+The Nature of Artificial Intelligence was an [Agora](http://www.snf.ch/en/funding/science-communication/agora/Pages/default.aspx) project; with several Idiap colleagues, we demonstrated speech synthesis in a museum context.  The exhibition was open at the [Musée de la Main](https://museedelamain.ch/).
 
 ## [NAST](https://data.snf.ch/grants/grant/185010)
 
-Neural Architectures for Speech Technology is a follow up to MASS in which we will generalise that work to generic neural architectures.  We aim to embed physiologically and statistically plausible components into standard deep learning architectures to bring them closer to true analogues of biological systems.  It funds [Alex](https://www.idiap.ch/~abittar/) and [Haolin](https://www.idiap.ch/~hchen/).
-
-# Previous projects
+Neural Architectures for Speech Technology was a follow up to MASS in which we generalised that work to generic neural architectures.  We embedded physiologically and statistically plausible components into standard deep learning architectures to bring them closer to true analogues of biological systems.  It funded [Alex](https://www.idiap.ch/~abittar/) and [Haolin](https://www.idiap.ch/~hchen/).
 
 ## ADeL
 
-ADeL can be thought of as building on the work done in DeepCharisma, bringing in audio visual modes to investigate how speech and gesture processing can help infer charismatic qualities.  The work was funded by [E4S](https://e4s.center/); it was a collaboration with [Daniel Gatica](https://www.idiap.ch/~gatica/) here at Idiap, with [Marianne Schmid Mast](https://hec.unil.ch/people/mschmidmast) and [John Antonakis](http://hec.unil.ch/people/jantonakis) at UNIL and [Jennifer Jordan](https://www.imd.org/faculty/professors/jennifer-jordan/) and [Alyson Meister](https://www.imd.org/faculty/professors/alyson-meister/) at IMD.
+ADeL built on the work done in DeepCharisma, bringing in audio visual modes to investigate how speech and gesture processing can help infer charismatic qualities.  The work was funded by [E4S](https://e4s.center/); it was a collaboration with [Daniel Gatica](https://www.idiap.ch/~gatica/) here at Idiap, with [Marianne Schmid Mast](https://hec.unil.ch/people/mschmidmast) and [John Antonakis](http://hec.unil.ch/people/jantonakis) at UNIL and [Jennifer Jordan](https://www.imd.org/faculty/professors/jennifer-jordan/) and [Alyson Meister](https://www.imd.org/faculty/professors/alyson-meister/) at IMD.
 
 
 ## DAHL
@@ -102,4 +102,3 @@ I worked on EMIME with John Dines, Lakshmi Saheer and Hui Liang.  That project c
 ## [AMIDA](http://www.amiproject.org/)
 
 I worked on AMIDA until it finished at the end of 2009. That work continued under [IM2](http://www.im2.ch/). It was closely related to the [TA2](http://www.ta2-project.eu/) project.
-
