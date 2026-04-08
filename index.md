@@ -13,7 +13,7 @@ Institute](http://www.idiap.ch/), where I lead the [Audio Inference Group](https
 # Paper trail
 
 * My [reviewed publications](png-pubs.html). These are also indexed by
-[Google Scholar](http://idiap.ch/~pgarner/scholar) and by [ORCID](https://orcid.org/0000-0002-0814-1348).
+[Google Scholar](https://scholar.google.ch/citations?user=c9nAX2AAAAAJ) and by [ORCID](https://orcid.org/0000-0002-0814-1348).
 
 * A (possibly incomplete) list of [my patents](png-pats.html). They are
 mainly US, but in practice most of these began life as either GB or Japan
@@ -31,14 +31,12 @@ I'm on the Editorial Board for [Speech Communication](https://www.journals.elsev
 
 Most work is on my [GitHub](http://github.com/pgarner) page.
 
-* I spent some time trying to find a sustainable way of maintaining software for the group. [BuSLR](https://github.com/idiap/buslr) was a failed attempt, but does contain some useful conda recipes.  Also promising was [homebrew](https://docs.brew.sh/), for which I made a [tap](https://github.com/pgarner/homebrew-tap).  Finally Ewan came along with a solution based on [modules](https://lmod.readthedocs.io/en/latest/index.html) and [spack](https://spack.io/).
+* I spent some time trying to find a sustainable way of maintaining software for the group. [BuSLR](https://github.com/idiap/buslr) was a failed attempt, but does contain some useful conda recipes.  Also promising was [homebrew](https://docs.brew.sh/), for which I made a [tap](https://github.com/pgarner/homebrew-tap).  Ewan came along with a solution based on [modules](https://lmod.readthedocs.io/en/latest/index.html) and [spack](https://spack.io/).  Now we use [EasyBuild](https://easybuild.io/).
 * [SSP](https://github.com/idiap/ssp) is a signal processing library in python.
 It contains, amongst other things, a feature extractor and [continuous pitch estimator](http://publications.idiap.ch/index.php/publications/show/2451). [libssp](https://github.com/idiap/libssp) duplicates some functionality in a C++ library.
 * [ISS](https://github.com/idiap/iss) is/was a framework for building and
 evaluating ASR and TTS models.  Based around HTS it's quite old.
-* I wrote and (infrequently) maintain [Tracter](https://github.com/idiap/tracter), a data-flow framework that
-formed the feature acquisition mechanism of [Juicer](https://github.com/idiap/juicer).  Tracter wraps several other
-packages, including libssp.
+* I wrote and (infrequently) maintain [Tracter](https://github.com/idiap/tracter), a data-flow framework that formed the feature acquisition mechanism of [Juicer](https://github.com/idiap/juicer).  Tracter wraps several other packages, including libssp.
 
 Software ages; Juicer and ISS were effectively replaced by [Kaldi](http://kaldi-asr.org).  In my team we tend to use [pytorch](https://pytorch.org/)-based toolkits now.
 
