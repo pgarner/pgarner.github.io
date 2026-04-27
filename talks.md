@@ -6,6 +6,7 @@ layout: page
 # Talks I have given that are on the web.
 
 At Idiap
+* I was [on Swiss radio](https://www.rts.ch/audio-podcast/2025/audio/voix-2-5-pour-de-vrai-pour-de-faux-29024494.html) trying to explain foundation models in French; recorded at Idiap in October 2025.
 
 * A presentation of the
   [SHAPED project](https://portal.klewel.com/watch/webcast/idiap-innovation-day-2019/talk/6/) (in French)
