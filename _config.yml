@@ -10,8 +10,7 @@ description: >
 # These stop it being portable.  Better to leave it at github.
 # baseurl: "~pgarner"
 # url: "http://idiap.ch"
-twitter_username: philipngarner
-github_username:  pgarner
+github_username: pgarner
 
 # Build settings
 markdown: kramdown
@@ -23,25 +22,25 @@ minima:
 
 # Specific pages that should appear in the header; order is respected.
 header_pages:
- - group.md
- - positions.md
- - projects.md
- - talks.md
- - appendices.md
- - blog.md
+  - group.md
+  - positions.md
+  - projects.md
+  - talks.md
+  - appendices.md
+  - blog.md
 
 # Collections of things.
 # Flatten the publications so the css path works with baseurls
 collections:
- pubs:
-   permalink: /:name
-   output: true
- appendices:
-   output: true
- ssp-course:
-   output: true
+  pubs:
+    permalink: /:name
+    output: true
+  appendices:
+    output: true
+  ssp-course:
+    output: true
 
 # Exclude from processing.
 exclude:
- - Gemfile
- - Gemfile.lock
+  - Gemfile
+  - Gemfile.lock

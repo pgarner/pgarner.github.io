@@ -34,4 +34,4 @@ Other
 
 * A talk on
   [Speech Synthesis and Prosody](http://www.viseo.com/en/evenement/speech-synthesis-and-prosody)
-  that I was invited to give at Viseo in Grenoble, February 2015.
+  that I was invited to give at Viseo in Grenoble, February 2015.  Update: the video is no longer there.
