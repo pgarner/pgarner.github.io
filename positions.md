@@ -9,7 +9,7 @@ We are always looking for good people at Idiap.  Any open position will be adver
 
 # Interns
 
-I have modest funding for internships; the subjects are open, but should be related to the research that is being done in the wider [group](https://www.idiap.ch/en/scientific-research/audio-inference).
+I have modest funding for internships; the subjects are open, but should be related to the research that is being done in the wider [group](https://www.idiap.ch/en/research/groups/audio-inference).
 
 Unless you have your own funding, interns are funded by Idiap with a stipend of CHF ~3,000 per month.  In Martigny, this will pay rent, food and (some) beer; you probably won't save anything.  An internship is suitable for someone doing a masters and needing a project, or with a masters waiting to take a PhD position.  It can also suit current a PhD student wanting to broaden their knowledge.  An internship is not suitable for a PhD graduate unless you have a very clear idea of where you're going next.
 
